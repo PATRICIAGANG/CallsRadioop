@@ -1,0 +1,27 @@
+{
+  "name": "callsradio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rojserbest/CallsRadio.git"
+  },
+  "author": "Roj Serbest <rojserbest@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rojserbest/CallsRadio/issues"
+  },
+  "homepage": "https://github.com/rojserbest/CallsRadio#readme",
+  "dependencies": {
+    "gram-tgcalls": "^1.3.5",
+    "telegram": "^1.7.15",
+    "dotenv": "^8.2.0",
+    "envalid": "^7.1.1"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}

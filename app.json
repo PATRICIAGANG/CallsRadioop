@@ -1,0 +1,43 @@
+{
+  "name": "Calls Radio",
+  "description": "Bring radios to your Telegram calls.",
+  "keywords": [
+    "telegram",
+    "music",
+    "radio",
+    "gram-tgcalls",
+    "tgcallsjs",
+    "gramjs"
+  ],
+  "repository": "https://github.com/callsmusic/CallsRadio",
+  "env": {
+    "STRING_SESSION": {
+      "description": "GramJS string session. You can generate one at https://rojserbest.github.io/bssg.",
+      "required": true
+    },
+    "API_ID": {
+      "description": "App ID from https://my.telegram.org/apps.",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "App hash from https://my.telegram.org/apps.",
+      "required": true
+    },
+    "CHAT_ID": {
+      "description": "ID of the chat you like to bring the radio to.",
+      "required": true
+    },
+    "RADIO_URI": {
+      "description": "An FFmpeg-supported input.",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
